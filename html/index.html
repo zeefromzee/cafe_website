@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cafe</title>
+</head>
+<body>
+    <header>
+    <!-- website i made for cafe inclludes menus, book club , vdo game club and art club -->
+    <title>Cozy Cafe Club</title>
+    <h1>Cozy Cafe Club</h1>
+    <section>
+        <nav class = "navbar">
+            <!-- add the logo here -->
+            <a class="logo" href="#">Coffee<span>.</span></a>
+        <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="CLUBS.html">Clubs</a></li>
+        <li><a href="About.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
 
+
+        </nav>
+
+    </section>
+    </header>
+<section class="hero-section">
+    <div class="content">
+        <h2>Start Your Day With A Book,  Art Piece or Just A Coffee</h2>
+        <p>
+        Welcome to the cozy  cafe where you can find like minded artists 
+        </p>
+        <button>Join Cozy Clubs!</button>
+    </div>
+    </section>
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+</body>
+</html>
