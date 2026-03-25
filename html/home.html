@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>The Gathering Place - Community Over Books, Games & Art</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">#</span>
+                <h1>The Gathering Place</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="About.html" class="nav-link">About</a></li>
+                <li><a href="CLUBS.html" class="nav-link">Clubs</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to The Gathering Place </h2>
+            <p class="hero-subtitle">Connect. Create. Celebrate. Over books, games, art, and community.</p>
+            <button class="cta-button">Explore Clubs</button>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2>About Our Community </h2>
+            <div class="about-content">
+                <p class="about-intro">
+                    Welcome to <span class="highlight">The Gathering Place</span> a vibrant community space where passionate souls connect over shared loves: books, games, art, and good food.
+                </p>
+                
+                <div class="about-mission">
+                    <h3>Our Mission</h3>
+                    <p>
+                        We believe that the best connections happen when people gather around their shared interests. Our mission is to create a welcoming, inclusive sanctuary where book lovers, gamers, artists, and creative minds can meet, collaborate, and inspire each other. We're more than just a café—we're a community hub built on passion, creativity, and authentic human connection.
+                    </p>
+                </div>
+
+                <div class="about-values">
+                    <h3>What We Believe In</h3>
+                    <ul class="values-list">
+                        <li>
+                            <strong>Connection:</strong> Every person has a unique story. We bring people together to share experiences and build meaningful friendships.
+                        </li>
+                        <li>
+                            <strong>Creativity:</strong> We celebrate artistic expression in all its forms, whether it's literature, digital art, gaming, or anything in between.
+                        </li>
+                        <li>
+                            <strong>Inclusivity:</strong> Everyone is welcome here. Beginners and experts alike. All interests, backgrounds, and perspectives are valued.
+                        </li>
+                        <li>
+                            <strong>Comfort:</strong> A cozy space, warm beverages, and welcoming faces, because great conversations happen over good food and drinks.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Get In Touch </h2>
+            
+            <div class="contact-content">
+                <p class="contact-intro">
+                    Have questions? Want to join a club? Or just want to say hello? We'd love to hear from you!
+                </p>
+
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <h3> Email</h3>
+                        <p><a href="mailto:hello@thegatheringplace.com">hello@thegatheringplace.com</a></p>
+                        <p class="contact-note">We typically respond within 24 hours</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                        <p class="contact-note">Monday–Friday, 10am–6pm</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3> Location</h3>
+                        <p>123 Cozy Corner Street<br>Coffee City, CC 12345</p>
+                        <p class="contact-note">Open Daily: 7am–10pm</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3> Social Media</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Discord</a>
+                        </div>
+                        <p class="contact-note">Follow for events and updates</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h3>Send us a Message</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">Club Interest</label>
+                            <select id="interest" name="interest">
+                                <option value="">Select a club...</option>
+                                <option value="book">The Book Nook Club</option>
+                                <option value="gaming">The Gaming Guild</option>
+                                <option value="art">The Creative Canvas</option>
+                                <option value="conversation">Coffee & Conversations</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h4>The Gathering Place</h4>
+                <p>A community space for books, games, art, and connection.</p>
+            </div>
+            <div class="footer-links">
+                <a href="home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="CLUBS.html">Clubs</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Discord</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Gathering Place. All rights reserved.</p>
+                <p>Created with passion for community and creativity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
