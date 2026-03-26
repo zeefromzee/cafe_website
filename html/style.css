@@ -614,10 +614,45 @@ textarea {
 .menu {
 	width: var(--container);
 	margin: 0 auto;
+	padding-top: var(--space-xl);
+	padding-bottom: var(--space-xxl);
+	position: relative;
+}
+
+.menu::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background:
+		radial-gradient(circle at 10% 10%, rgba(232, 183, 107, 0.16), transparent 32%),
+		radial-gradient(circle at 90% 90%, rgba(212, 232, 247, 0.2), transparent 34%);
+	pointer-events: none;
+	z-index: -1;
+}
+
+.menu > h2 {
+	margin-bottom: var(--space-xl);
+	font-size: clamp(2rem, 3.2vw, 3rem);
+	position: relative;
+}
+
+.menu > h2::after {
+	content: '  Cafe Favorites';
+	font-size: 0.95rem;
+	font-weight: 500;
+	color: rgba(62, 39, 35, 0.65);
+	display: block;
+	margin-top: 6px;
+	letter-spacing: 0.04em;
 }
 
 .menu-category {
 	margin-bottom: var(--space-xl);
+	background: rgba(255, 255, 255, 0.74);
+	border: 1px solid rgba(212, 165, 86, 0.24);
+	border-radius: var(--radius-md);
+	padding: var(--space-md);
+	box-shadow: var(--shadow-soft);
 }
 
 .menu-category > h3 {
@@ -625,6 +660,11 @@ textarea {
 	color: var(--coffee-brown);
 	padding-left: var(--space-xs);
 	border-left: 4px solid var(--accent-gold);
+	letter-spacing: 0.01em;
+}
+
+.menu-category:nth-of-type(even) {
+	background: rgba(250, 243, 224, 0.85);
 }
 
 .menu-items {
@@ -640,25 +680,39 @@ textarea {
 	padding: var(--space-md);
 	box-shadow: var(--shadow-soft);
 	transition: var(--transition);
+	display: grid;
+	grid-template-columns: 1fr auto;
+	column-gap: var(--space-sm);
+	row-gap: 4px;
+	align-items: start;
+	border-left: 5px solid rgba(232, 183, 107, 0.62);
 }
 
 .menu-item:hover {
 	transform: translateY(-3px);
 	box-shadow: var(--shadow-hover);
+	border-left-color: var(--accent-orange);
 }
 
 .menu-item h4 {
-	margin-bottom: 6px;
+	margin-bottom: 0;
+	font-size: 1.15rem;
+}
+
+.menu-item p {
+	grid-column: 1 / -1;
+	color: rgba(62, 39, 35, 0.82);
 }
 
 .price {
 	display: inline-block;
-	margin-top: 10px;
+	margin-top: 0;
 	font-weight: 700;
 	color: var(--coffee-brown);
 	background: rgba(232, 183, 107, 0.22);
 	border-radius: var(--radius-pill);
-	padding: 4px 12px;
+	padding: 6px 12px;
+	justify-self: end;
 }
 
 /* =============================
